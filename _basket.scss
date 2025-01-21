@@ -1,0 +1,185 @@
+body{
+    font-family:"Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.top-basket {
+    height: 400px;
+    background: url(img/fon-basket.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.basket {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+    &__link-box{
+        display: flex;
+        gap: 30px;
+    }
+    &__color{
+        color: #000000;
+        font-size: 14px;
+        font-weight: 400px;
+        line-height: 29.4px;
+        text-decoration: underline;
+    }
+    &__item{
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__left{
+        display: flex;
+        gap: 32px;
+    }
+    &__info{
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__title{
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.26px;
+        color: #000000;
+    }
+    &__text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.07px;
+        color: #888888;
+    }
+    &__sum{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: #050505;
+    }
+    &__form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        width: 379px;
+        height: 556px;
+        grid-column: span 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__content {
+        grid-column: span 8;
+    }
+    &__number{
+     width: 71px;
+    height: 51px;
+    border-radius: 6px;
+    border: 0.5px solid #dedddd;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 29.4px;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    background: rgb(247, 246, 246);
+    }
+    &__title-box{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.26px;
+    text-align: center;
+    color: #000000;
+    }
+    &__title-text{
+    display: flex;
+    padding-top: 42px;
+    padding-bottom: 35px;
+    }
+ 
+   &__fields{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+   }
+   
+   &__form-item{
+    width: 288px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    font-family: inherit;
+    border-bottom: 1px solid #CACDD8;
+    background: transparent;
+    outline: none;
+  }
+  &__form-item::placeholder{
+    color: #000000;
+}
+   &__link{
+    width: 290px;
+    height: 41px;
+    border: 1px solid #040404;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    line-height: 19.5px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: #040404;
+   }
+
+   &__menu{
+    display: flex;
+    gap: 7px;
+    margin-top: 25px;
+   }
+
+   &__link-form{
+    width: 200px;
+    height: 37px;
+    border: 1px solid #040404;
+    border-radius: 50px;
+    background-color: transparent;
+    outline: none;
+    text-align: left 33px;
+    text-align: right 34px;
+    font-size: 14px;
+    line-height: 17.07px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    color: #040404;
+   }
+  &__price-bold{
+    font-weight: 500;
+  }
+  &__block{
+    display: flex;
+    gap: 18px;
+    margin-top: 64px;
+    flex-direction: column;
+  }
+}
+.sum{
+    text-align: center;
+    font-weight: 400;
+}
+
+@import 'tablet';

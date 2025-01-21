@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    height: 100vh;
+    font-size: 16px;
+  }
+a{
+   text-decoration: none; 
+}
+
+.options{
+    display: flex;
+    position: relative;
+   gap: 10px;
+
+  
+}
+
+.filtr__form{
+    position: absolute;
+    margin-left: -452px;
+    margin-top: 60px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 36px;
+    background-color: #FFFFFF;
+    padding: 40px 48px;
+    box-shadow: 0px 4px 67px -12px #00000052;
+}
+
+.filtr-form__content-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px 65px;
+    min-width: 541.5px;
+    max-height: 548px;
+}
+.filtr-form__fieldset{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    border: none;
+}
+.filtr-form__fieldset--type{
+    padding-right: 40px;
+}
+.filtr-form__legend{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.filtr-form__button{
+    align-self: flex-end;
+    max-width: 190px;
+    width: 100%;
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+   
+    &__input{
+        display: none;
+        padding-left: 48px;
+    }
+    &__label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        font-size: 14px;
+        padding-left: 29px;
+    }
+    &__label::before{
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid #888888;
+        position: absolute;
+        background-color: #FFFFFF;
+        left: 0;
+    }
+    &__input:checked + .radio__label::before{
+        border-color: #000000;
+        background-image: url(img/Vector.png);
+        background-repeat: no-repeat;
+        background-position: 45% 60%;
+    }
+}
+
+.range{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    &__input{
+        background-color: #c9c9c9;
+        border-radius: 40px;
+        width: 190px;
+        height: 10px;
+        overflow: hidden;
+        outline: none;
+    }
+    &__slider input{
+        position: absolute;
+    }
+    &__slider{
+        font-family: sans-serif;
+        font-size: 14px;
+        position: relative;
+        height: 20px;
+        width: 210px;
+        display: inline-block;
+        margin-top: -5px;
+    }
+    &__label{
+        font-size: 14px;
+    }
+    &__input,
+    &__input::-webkit-slider-runnable-track,
+    &__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: none;
+    }
+    &__input::-webkit-slider-runnable-track{
+        width: 200px;
+        height: 1px;
+        background: #000000;
+    }
+    &__input:nth-child(2)::-webkit-slider-runnable-track{
+        background: none;
+    }
+    &__input::-webkit-slider-thumb {
+        appearance: none;
+        position: relative;
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
+        background: #000000;
+        border: 1 solid #000000;
+        border-radius: 25px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    &__input:nth-child(1)::-webkit-slider-thumb{
+        z-index: 2;
+    }
+}
+
+.palette-options{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 189px;
+    gap: 14px;
+   
+    &__checkbox{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    &__input{
+        display: none;
+    }
+    &__label{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+    &__label::before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #888888;
+        position: absolute;
+        background-color: #FFFFFF;
+        left: 0;
+    }
+    &__input:checked + &__label::before{
+        border-color: #000000;
+        background-image: url(img/Vector.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__input:checked + &__label--black::before,
+    &__input:checked + &__label--darkblue::before,
+    &__input:checked + &__label--violet::before{
+        border-color: #FFFFFF;
+        background-image: url(img/Vector1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__label--white::before{
+        background-color: #FFFFFF;
+        border-color: #888888;
+    }
+    &__label--black::before{
+        background-color: #000000;
+        border-color: #000000;
+    }
+    &__label--grey::before{
+        background-color: #888888;
+        border-color: #888888;
+    }
+    &__label--red::before{
+        background-color: #FF0000;
+        border-color: #FF0000;
+    }
+    &__label--orange::before{
+        background-color: #FF7A41;
+        border-color: #FF7A41;
+    }
+    &__label--yellow::before{
+        background-color: #F2CB01;
+        border-color: #F2CB01;
+    }
+    &__label--green::before{
+        background-color: #00BF2A;
+        border-color: #00BF2A;
+    }
+    &__label--aquamarine::before{
+        background-color: #1CCC97;
+        border-color: #1CCC97;
+    }
+    &__label--blue::before{
+        background-color: #009FE3;
+        border-color: #009FE3;
+    }
+    &__label--darkblue::before{
+        background-color: #000AF8;
+        border-color: #000AF8;
+    }
+    &__label--violet::before{
+        background-color: #6710D6;
+        border-color: #6710D6;
+    }
+    &__label--eggplant::before{
+        background-color: #9D0DB5;
+        border-color: #9D0DB5;
+    }
+    &__label--lavender::before{
+        background-color: #D89AFF;
+        border-color: #D89AFF;
+    }
+    &__label--pink::before{
+        background-color: #FF65A6;
+        border-color: #FF65A6;
+    }
+}
+
+summary {
+    display: block;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary::after {
+    content: "\25B6";
+    padding-left: 0.5em;
+  }
+  
+  details[open] > summary::after {
+    content: "\25BC";
+  }

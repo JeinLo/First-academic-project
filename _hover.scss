@@ -1,0 +1,56 @@
+.icon:hover path{
+    fill: #000000;
+}
+.icon{
+    transition: all 1s;
+}
+.icon:hover{
+    transform: scale(2);
+}
+
+.menu__link:hover{
+    text-decoration-line: underline;
+}
+.link:hover{
+    color: rgb(228, 227, 227);
+    text-decoration:none;
+}
+.div__title:hover{
+        color: rgb(136, 136, 136);
+    text-decoration:none;
+}
+.footer__link:hover{
+    color: rgb(0, 0, 0);
+    text-decoration-line: underline;
+}
+.footer__text:hover{
+    color: rgb(0, 0, 0);
+    text-decoration-line: underline;
+}
+.box__link:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.search__link:hover{
+    text-decoration-line: underline;
+}
+.search__filtr:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.search__popular-new:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.basket__link-form:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.basket__link:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.basket__color:hover{
+    color: rgb(136, 136, 136);
+    text-decoration:none;
+}

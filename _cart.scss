@@ -1,0 +1,248 @@
+.top-cart {
+    height: 400px;
+    background-image: url(img/header-cart.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading-big {
+    font-weight: 600;font-size: 64px;
+    line-height: 70px;
+    margin-top: 127px;
+    color: rgb(255, 255, 255);
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+    
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &__item {
+        border-top: 0.5px solid rgb(202 , 205 , 216); 
+       padding-top: 18px;
+       padding-bottom: 23px;
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__info {
+        width: 276px;
+    }
+
+    &__info_h {
+        color: rgba(0, 0, 0,);
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+
+    }
+
+    &__info_text {
+        color:  rgb(136, 136, 136);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+   
+    &__info_price{
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;    
+    }
+
+    &__link-box {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-decoration-line: underline;
+        display: flex;
+        gap: 32px;
+        justify-content: flex-start;
+    }
+
+    &__link-box_C {
+        color: rgb(0, 0, 0);
+    }
+
+    &__input {
+        width: 71px;
+height: 51px;
+top: 523px;
+left: 837px;
+gap: 0px;
+border-radius: 6px 6px 6px 6px;
+opacity: 0px;
+border-style: none;
+
+        font-family: Poppins;
+font-size: 14px;
+font-weight: 600;
+line-height: 29.4px;
+text-align: center;
+background: rgb(247, 246, 246, 1);
+ }
+
+    &__form {
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        height: 550px;
+        grid-column: span 4;
+    }
+
+    &__content {grid-column: span 8;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__button {
+        display: flex;
+        gap: 7px;
+    }
+
+    &__button_1 {
+        width: 200px;
+        height: 37px;
+        top: 983px;
+        left: 120px;
+        
+        gap: 10px;
+        border-radius: 80px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.07px;
+        text-align: center;
+
+        border: 1px solid rgb(0, 0, 0,);
+        background: transparent;
+
+    }
+
+    &__form_order {
+        padding-top: 42px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+           
+    }
+
+    &__form_1 {
+        padding-top: 35px;
+        padding-left: 27px;
+        padding-right: 64px;
+        width: 288px;
+        height: 143px;
+        border-style: none;
+        background: rgb(247, 246, 246);
+    }
+
+    &__form_name {
+        width: 288px;
+        border-style: none;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        background: rgb(247, 246, 246);
+        border-bottom: 0.5px solid rgb(202 , 205 , 216); 
+    }
+    
+    &__form_tel {
+        padding-top: 32px;
+        width: 288px;
+        border-style: none;
+        background: rgb(247, 246, 246);
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        border-bottom: 0.5px solid rgb(202 , 205 , 216); 
+    }
+
+    &__form_address {
+        padding-top: 32px;
+        width: 288px;
+        border-style: none;
+        background: rgb(247, 246, 246);
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        border-bottom: 0.5px solid rgb(202 , 205 , 216); 
+    }
+
+    &__form_total {
+        padding-top: 45px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    &__form_button {
+        margin-top: 18px;
+        margin-left: 45px;
+        position: relative;
+        width: 302.24px;
+        height: 45.72px;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        background: transparent;
+    }
+}
+

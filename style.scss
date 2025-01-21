@@ -1,0 +1,414 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"Montserrat", sans-serif;
+    font-optical-sizing: auto;
+  }
+a{
+   text-decoration: none; 
+}
+                /*Начало*/
+.center{
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+.header {
+   height: 77px;
+   border-bottom: 0.5px solid #FFFFFF;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+  &__logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    gap: 272px;
+    }
+ &__input{
+    width: 288px;
+    height: 41px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+    font-family:"Montserrat";
+    }
+    &__input::placeholder{
+        color: #FFFFFF;
+    }
+}
+.menu{
+    display: flex;
+    gap: 32px;
+
+    &__link {
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+   }
+   &-mob{
+    display: none;
+   }
+}
+
+.top {
+    height: 735px;
+    background-image: url(img/topfon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__catalog{
+        height: 400px;
+        background-image: url(img/fon-catalog.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    
+    &__text {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 400;
+       text-align: left;
+       color: #FFFFFF;
+       padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+.title{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin-top: 63px;
+    max-width: 792px;
+
+    &__title-box{
+    margin-top: 127px;
+    }
+}
+.link {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: underline;
+    color: #FFFFFF;
+    padding-top: 16px;
+}
+                        /*Grid*/
+
+.img{                        
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px;
+    color: black;
+    padding-top: 64px;
+    padding-bottom: 32px;
+                    
+  &__content{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+    &__item{
+        height: 415px;
+        grid-column: span 4;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 41px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item_big{
+        grid-column: span 6;
+    }
+    &__item_1{
+        background: url(img/img1.jpg);
+     }
+     &__item_2{
+        background: url(img/img2.jpg);
+    }
+    &__item_3{
+        background: url(img/img3.jpg);
+    }
+    &__item_4{
+        background: url(img/img4.jpg);
+    }
+    &__item_5{
+        background: url(img/img5.jpg);
+     }
+}
+
+           /*Кнопки поиска */
+.search{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 41px;
+
+    &__nav{
+        display: flex;
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+    &__nav li+li::before{
+        content: "/";
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &__link{
+        color: #000000;
+    }
+    &__box{
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 551px;
+    }
+    &__filtr{
+        border: 1px solid #C4C4C4;
+        width: 182px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        background: #fff;
+        font-family: 'Montserrat';
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    &__choice{
+        background-image: url(img/icon.jpg);
+        background-repeat: no-repeat;
+        background-position: 95%;
+        display: flex;
+    }
+    &__popular-new{
+        border: 1px solid #C4C4C4;
+        border-radius: 20px;
+         width: 227px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.5px;
+        font-family: 'Montserrat';
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        appearance: none;
+        align-items: center;
+        background-position: 95%;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+}
+
+
+                /*Иконки*/
+
+.product:hover .product__icons{
+    display: flex;
+    gap: 10px;
+}
+.product__icons{
+    position: absolute;
+    display: none;
+    top: 10px;
+    right: 10px;
+}
+.product__icon{
+ display: block;
+}
+                    /*Контент*/
+.product{
+    display: flex;
+   column-gap: 32px;
+   row-gap: 56px;
+    flex-wrap: wrap;
+
+    &__content{
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: black;
+        padding-top: 9px;
+        padding-bottom: 9px;
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        padding-bottom: 12px;
+      }
+
+}
+
+.price{
+    display: flex;
+    gap: 32px;
+
+    &__box{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-decoration-line: line-through;
+        color: #888;
+    }
+    &__text{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: #050505;
+    }
+}
+
+
+                    /*Подвал*/
+.div{
+    margin-top: 31px;
+
+    &__title{  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+    text-align: left;
+    text-decoration: underline; 
+    }
+}
+.footer{
+    background: #F7F6F6;
+    padding-top: 32px;
+    padding-bottom: 58px;
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: black;
+       }
+    &__content{
+        list-style-type: none;
+        gap: 12px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__link{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888;
+    }
+    &__text{
+        color: #888;
+        text-decoration: none;
+        display: flex;
+        gap: 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+    &__img{
+        display: flex;
+        gap: 20px;
+    }
+}
+.logo{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+}
+.email::placeholder{
+    color: #C4C4C4;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-content: space-around;
+
+    &__text{
+        width: 251px;
+        height: 15px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #000;
+    }
+    &__email{
+        width: 260px;
+        height: 40px;
+        background: #fff;
+        border: 1px solid #c4c4c4; 
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        color: #c4c4c4;
+        font-weight: 400;
+        text-align: left;
+        padding-left: 17px;
+        font-family: "Montserrat";
+    }
+    &__link{
+        background: rgba(222,215,215,0.41);
+        border: 1px solid #fff; 
+        box-sizing: border-box;
+        border-radius: 20px;
+        width: 260px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000;
+        font-family: inherit;
+    }
+}
+.dialog{
+    border: none;
+}
+
+                    /*Корзина*/
+@import 'vars';
+@import 'basket';
+@import 'modal';
+@import 'tablet';
+@import 'mobile';
+@import 'hover';
